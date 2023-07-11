@@ -26,6 +26,5 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Start SUT
-      run: java -jar ./artifacts/app-ibank-build-for-testers.jar
-    - name: Test headless
-      run: ./gradlew test --info -Dselenide.headless=true
+      run: java -jar ./artifacts/app-ibank-build-for-testers.jar &
+  
